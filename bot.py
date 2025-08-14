@@ -2,6 +2,9 @@ import discord
 import random
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -57,9 +60,6 @@ KEYWORDS = ["謝","謝謝", "多謝", "多蝦", "多瞎",
 
 # 感謝黑名單
 BLACKLIST_PHRASES = ["感謝涵", "感謝祭", "不謝", "不用謝", "不感謝", "不謝謝"]
-    "你怎麼那麼客氣啦",
-    "不用謝 都是自己人",
-]
 
 # 錯誤回覆（不需要名字）
 WRONG_REPLIES = [
